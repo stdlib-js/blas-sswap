@@ -20,7 +20,7 @@ limitations under the License.
 
 # sswap
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Interchange two single-precision floating-point vectors.
 
@@ -130,9 +130,9 @@ console.log( y.data );
 
 ## See Also
 
--   [`@stdlib/blas/base/sswap`][@stdlib/blas/base/sswap]: interchange two single-precision floating-point vectors.
--   [`@stdlib/blas/dswap`][@stdlib/blas/dswap]: interchange two double-precision floating-point vectors.
--   [`@stdlib/blas/gswap`][@stdlib/blas/gswap]: interchange two vectors.
+-   <span class="package-name">[`@stdlib/blas/base/sswap`][@stdlib/blas/base/sswap]</span><span class="delimiter">: </span><span class="description">interchange two single-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/dswap`][@stdlib/blas/dswap]</span><span class="delimiter">: </span><span class="description">interchange two double-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/gswap`][@stdlib/blas/gswap]</span><span class="delimiter">: </span><span class="description">interchange two vectors.</span>
 
 </section>
 
@@ -183,8 +183,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-sswap/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/blas-sswap?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/blas-sswap.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/blas-sswap/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
