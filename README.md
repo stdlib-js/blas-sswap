@@ -41,19 +41,30 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-sswap
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import sswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-sswap/tags). For example,
-
-```javascript
-import sswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@v0.1.0-esm/index.mjs';
+var sswap = require( '@stdlib/blas-sswap' );
 ```
 
 #### sswap( x, y )
@@ -61,8 +72,8 @@ import sswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@v0.1.0-esm/i
 Interchanges two single-precision floating-point vectors `x` and `y`.
 
 ```javascript
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
-import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
+var Float32Array = require( '@stdlib/array-float32' );
+var array = require( '@stdlib/ndarray-array' );
 
 var x = array( new Float32Array( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] ) );
 var y = array( new Float32Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );
@@ -101,16 +112,11 @@ The function has the following parameters:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
-import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
-import sswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@esm/index.mjs';
+```javascript
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+var Float32Array = require( '@stdlib/array-float32' );
+var array = require( '@stdlib/ndarray-array' );
+var sswap = require( '@stdlib/blas-sswap' );
 
 var x = array( new Float32Array( 10 ) );
 var y = array( new Float32Array( 10 ) );
@@ -129,10 +135,6 @@ console.log( y.data );
 sswap( x, y );
 console.log( x.data );
 console.log( y.data );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -164,7 +166,7 @@ console.log( y.data );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -194,8 +196,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/blas-sswap.svg
 [npm-url]: https://npmjs.org/package/@stdlib/blas-sswap
 
-[test-image]: https://github.com/stdlib-js/blas-sswap/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/blas-sswap/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/blas-sswap/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/blas-sswap/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-sswap/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/blas-sswap?branch=main
@@ -226,15 +228,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [blas]: http://www.netlib.org/blas
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/esm
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
 
 <!-- <related-links> -->
 
-[@stdlib/blas/base/sswap]: https://github.com/stdlib-js/blas-base-sswap/tree/esm
+[@stdlib/blas/base/sswap]: https://github.com/stdlib-js/blas-base-sswap
 
-[@stdlib/blas/dswap]: https://github.com/stdlib-js/blas-dswap/tree/esm
+[@stdlib/blas/dswap]: https://github.com/stdlib-js/blas-dswap
 
-[@stdlib/blas/gswap]: https://github.com/stdlib-js/blas-gswap/tree/esm
+[@stdlib/blas/gswap]: https://github.com/stdlib-js/blas-gswap
 
 <!-- </related-links> -->
 
