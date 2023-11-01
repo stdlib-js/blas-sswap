@@ -44,8 +44,8 @@
     "@stdlib/types": "^0.1.0"
   },
   "devDependencies": {
-    "@stdlib/array-float32": "^0.1.0",
-    "@stdlib/array-int16": "^0.1.0",
+    "@stdlib/array-float32": "^0.1.1",
+    "@stdlib/array-int16": "^0.1.1",
     "@stdlib/bench": "^0.1.0",
     "@stdlib/blas-base-scopy": "^0.1.1",
     "@stdlib/math-base-assert-is-nan": "^0.1.1",
