@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import sswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@esm/index.mjs';
+import sswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@v0.2.0-esm/index.mjs';
 ```
 
 #### sswap( x, y )
@@ -105,7 +105,7 @@ The function has the following parameters:
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
 import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
 import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
-import sswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@esm/index.mjs';
+import sswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@v0.2.0-esm/index.mjs';
 
 var x = array( new Float32Array( 10 ) );
 var y = array( new Float32Array( 10 ) );
