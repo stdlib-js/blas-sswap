@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2020 The Stdlib Authors.
@@ -16,26 +16,21 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var isFloat32VectorLike = require( '@stdlib/assert-is-float32vector-like' );
-var format = require( '@stdlib/error-tools-fmtprodmsg' );
-var swap = require( '@stdlib/blas-base-sswap' ).ndarray;
-
-
-// MAIN //
+import { ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Interchanges two single-precision floating-point vectors.
 *
-* @param {VectorLike} x - first input array
-* @param {VectorLike} y - second input array
-* @throws {TypeError} first argument must be a 1-dimensional ndarray containing single-precision floating-point numbers
-* @throws {TypeError} second argument must be a 1-dimensional ndarray containing single-precision floating-point numbers
-* @throws {RangeError} input arrays must be the same length
-* @returns {VectorLike} `y`
+* @param x - first input array
+* @param y - second input array
+* @throws first argument must be a 1-dimensional `ndarray` containing single-precision floating-point numbers
+* @throws second argument must be a 1-dimensional `ndarray` containing single-precision floating-point numbers
+* @throws input arrays must be the same length
+* @returns `y`
 *
 * @example
 * var Float32Array = require( '@stdlib/array-float32' );
@@ -52,21 +47,9 @@ var swap = require( '@stdlib/blas-base-sswap' ).ndarray;
 * var ybuf = y.data;
 * // returns <Float32Array>[ 4.0, 2.0, -3.0, 5.0, -1.0 ]
 */
-function sswap( x, y ) {
-	if ( !isFloat32VectorLike( x ) ) {
-		throw new TypeError( format( '0GDDA', x ) );
-	}
-	if ( !isFloat32VectorLike( y ) ) {
-		throw new TypeError( format( '0GDDB', y ) );
-	}
-	if ( x.length !== y.length ) {
-		throw new RangeError( format( '0GD3S', x.length, y.length ) );
-	}
-	swap( x.length, x.data, x.strides[ 0 ], x.offset, y.data, y.strides[ 0 ], y.offset ); // eslint-disable-line max-len
-	return y;
-}
+declare function sswap( x: ndarray, y: ndarray ): ndarray;
 
 
 // EXPORTS //
 
-module.exports = sswap;
+export = sswap;
