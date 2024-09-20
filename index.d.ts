@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2020 The Stdlib Authors.
@@ -16,32 +16,28 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var base = require( '@stdlib/blas-base-sswap' ).ndarray;
-var factory = require( '@stdlib/blas-tools-swap-factory' );
-
-
-// MAIN //
+import { float32ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Interchanges two single-precision floating-point vectors.
 *
-* @name sswap
-* @type {Function}
-* @param {ndarrayLike} x - first input array
-* @param {ndarrayLike} y - second input array
-* @param {NegativeInteger} [dim=-1] - dimension along which to interchange elements
-* @throws {TypeError} first argument must be a ndarray containing single-precision floating-point numbers
-* @throws {TypeError} first argument must have at least one dimension
-* @throws {TypeError} second argument must be a ndarray containing single-precision floating-point numbers
-* @throws {TypeError} second argument must have at least one dimension
-* @throws {Error} both input arrays must have the same shape
-* @throws {RangeError} third argument is out-of-bounds
-* @throws {Error} cannot write to read-only array
-* @returns {ndarrayLike} `y`
+* ## Notes
+*
+* -   For multi-dimensional input arrays, the function performs batched computation, such that the function interchanges each pair of vectors in `x` and `y` according to the specified dimension index.
+* -   Both input arrays must have the same shape.
+* -   Negative indices are resolved relative to the last array dimension, with the last dimension corresponding to `-1`.
+*
+* @param x - first input array
+* @param y - second input array
+* @param dim - dimension for which to compute the dot product (default: -1)
+* @throws first argument must be a non-zero-dimensional ndarray containing single-precision floating-point numbers
+* @throws second argument must be a non-zero-dimensional ndarray containing single-precision floating-point numbers
+* @throws input arrays must have the same shape
+* @returns `y`
 *
 * @example
 * var Float32Array = require( '@stdlib/array-float32' );
@@ -58,9 +54,9 @@ var factory = require( '@stdlib/blas-tools-swap-factory' );
 * var ybuf = y.data;
 * // returns <Float32Array>[ 4.0, 2.0, -3.0, 5.0, -1.0 ]
 */
-var sswap = factory( base, 'float32' );
+declare function sswap( x: float32ndarray, y: float32ndarray, dim?: number ): float32ndarray;
 
 
 // EXPORTS //
 
-module.exports = sswap;
+export = sswap;
