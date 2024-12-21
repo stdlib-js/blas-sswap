@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-23)
+## Unreleased (2024-12-21)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`8684eb4`](https://github.com/stdlib-js/stdlib/commit/8684eb429498a239bff9bdd72f443dd1cd981552) - **docs:** update related packages sections [(#4114)](https://github.com/stdlib-js/stdlib/pull/4114) _(by stdlib-bot, Athan Reines)_
 -   [`d8a7b13`](https://github.com/stdlib-js/stdlib/commit/d8a7b13093db2dfb01ccb6ec2530753dc758a5ac) - **docs:** fix description _(by Athan Reines)_
 -   [`dc22190`](https://github.com/stdlib-js/stdlib/commit/dc22190e473acb1a413af6d4482305c65f2420fd) - **refactor:** use `blas/tools/swap-factory` _(by Athan Reines)_
 -   [`6c769ad`](https://github.com/stdlib-js/stdlib/commit/6c769ad65cf528389012efc400b29b6e57a4f352) - **fix:** update error message _(by Athan Reines)_

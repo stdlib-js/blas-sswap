@@ -178,6 +178,14 @@ console.log( ndarray2array( y ) );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/blas-base/sswap`][@stdlib/blas/base/sswap]</span><span class="delimiter">: </span><span class="description">interchange two single-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas-dswap`][@stdlib/blas/dswap]</span><span class="delimiter">: </span><span class="description">interchange two double-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas-gswap`][@stdlib/blas/gswap]</span><span class="delimiter">: </span><span class="description">interchange two vectors.</span>
+
 </section>
 
 <!-- /.related -->
@@ -261,6 +269,14 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray-orders
 
 [@stdlib/blas/base/sswap]: https://github.com/stdlib-js/blas-base-sswap
+
+<!-- <related-links> -->
+
+[@stdlib/blas/dswap]: https://github.com/stdlib-js/blas-dswap
+
+[@stdlib/blas/gswap]: https://github.com/stdlib-js/blas-gswap
+
+<!-- </related-links> -->
 
 </section>
 
