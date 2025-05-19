@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-10)
+## Unreleased (2025-05-19)
 
 <section class="features">
 
@@ -26,12 +26,25 @@
 
 <!-- /.bug-fixes -->
 
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#7018](https://github.com/stdlib-js/stdlib/issues/7018)
+
+</section>
+
+<!-- /.issues -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`a75bd09`](https://github.com/stdlib-js/stdlib/commit/a75bd09ef2db7eb2761ebc1e776ebcfa123d7493) - **chore:** fix EditorConfig lint errors [(#7029)](https://github.com/stdlib-js/stdlib/pull/7029) _(by zhanggy)_
 -   [`8684eb4`](https://github.com/stdlib-js/stdlib/commit/8684eb429498a239bff9bdd72f443dd1cd981552) - **docs:** update related packages sections [(#4114)](https://github.com/stdlib-js/stdlib/pull/4114) _(by stdlib-bot, Athan Reines)_
 -   [`d8a7b13`](https://github.com/stdlib-js/stdlib/commit/d8a7b13093db2dfb01ccb6ec2530753dc758a5ac) - **docs:** fix description _(by Athan Reines)_
 -   [`dc22190`](https://github.com/stdlib-js/stdlib/commit/dc22190e473acb1a413af6d4482305c65f2420fd) - **refactor:** use `blas/tools/swap-factory` _(by Athan Reines)_
@@ -48,10 +61,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Bhansali
 -   Athan Reines
+-   zhanggy
 
 </section>
 
