@@ -50,7 +50,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-sswap = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@umd/browser.js' )
+sswap = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@v0.3.0-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -62,7 +62,7 @@ var sswap = require( 'path/to/vendor/umd/blas-sswap/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@v0.3.0-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -158,7 +158,7 @@ v2 = y.get( 0, 0 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-sswap@v0.3.0-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
