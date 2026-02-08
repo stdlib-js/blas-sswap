@@ -39,7 +39,8 @@
   "dependencies": {
     "@stdlib/blas-base-sswap": "^0.3.1",
     "@stdlib/blas-tools-swap-factory": "^0.1.0",
-    "@stdlib/types": "^0.4.3"
+    "@stdlib/types": "^0.4.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/array-float32": "^0.2.3",
